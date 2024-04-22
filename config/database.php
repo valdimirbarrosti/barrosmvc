@@ -1,11 +1,17 @@
 <?php
 
-return [
-    'driver' => 'mysql',
-    'host' => 'localhost',
-    'database' => 'meu_banco_de_dados',
-    'username' => 'usuario_db',
-    'password' => 'senha_db',
-    'charset' => 'utf8mb4',
-    'collation' => 'utf8mb4_unicode_ci',
+$var_dump('asd');
+        die();
+
+$dbConfig = [
+    'driver' => 'pgsql ',
+    'host' => '127.0.0.1',
+    'database' => 'barrosmvc',
+    'username' => 'postgres',
+    'password' => 'postgres',
+    'charset' => 'utf8',
+    'options' => [
+        PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
+        PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
+    ],
 ];

@@ -3,21 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Users List</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-            text-align: center;
-            padding: 50px;
-        }
-        h1 {
-            color: #333;
-        }
-    </style>
+    <title>Users</title>
 </head>
 <body>
-    <h1>Users List</h1>
-    <p>This is the list of users.</p>
+    <h1>Lista de Usuários</h1>
+    <ul>
+        <?php foreach ($users as $user): ?>
+            <li><?php echo $user['name']; ?></li>
+        <?php endforeach; ?>
+    </ul>
 </body>
 </html>

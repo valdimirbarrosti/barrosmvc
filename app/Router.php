@@ -10,6 +10,7 @@ class Router
 
     public function get($uri, $handler)
     {
+      
         $this->routes['GET'][$uri] = $handler;
     }
 
